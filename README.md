@@ -55,95 +55,101 @@ Tab (1)
 
 Flows (8)
 
-     * Aesthetics_Create_or_Update_Medical_Questionnaire
-     * Aesthetics_Create_Service_Appointment
-     * Aesthetics_Create_Update_Lead_Status_History_record_when_Lead_is_edited
-     * Aesthetics_Create_Update_Opportunity_Status_History_record_when_Oppty_is_edited
-     * Aesthetics_Gather_Lead_Information_Web2Lead
-     * Aesthetics_Relate_Medical_Questionnaire_and_Files_to_Oppty_Acct
-     * Aesthetics_Reschedule_Service_Appointment
-     * Aesthetics_Update_Opportunity_Stage_if_products_are_added
+* Aesthetics_Create_or_Update_Medical_Questionnaire
+* Aesthetics_Create_Service_Appointment
+* Aesthetics_Create_Update_Lead_Status_History_record_when_Lead_is_edited
+* Aesthetics_Create_Update_Opportunity_Status_History_record_when_Oppty_is_edited
+* Aesthetics_Gather_Lead_Information_Web2Lead
+* Aesthetics_Relate_Medical_Questionnaire_and_Files_to_Oppty_Acct
+* Aesthetics_Reschedule_Service_Appointment
+* Aesthetics_Update_Opportunity_Stage_if_products_are_added
 
 Record Types (4)
 
-     * Aesthetics Center - Account               
-     * Aesthetics Center - Lead         
-     * Aesthetics Center - Opportunity         
-     * Aesthetics Center - Person Account  
-     * Aesthetics Center - Task  
+* Aesthetics Center - Account               
+* Aesthetics Center - Lead         
+* Aesthetics Center - Opportunity         
+* Aesthetics Center - Person Account  
+* Aesthetics Center - Task  
 
 Page Layouts (9)
 
-     * Aesthetics Center - Account               
-     * Aesthetics Center - Lead                     
-     * Aesthetics Center - Opportunity         
-     * Aesthetics Center - Person Account               
-     * Aesthetics Center - Service Appt       
-     * Aesthetics Center - Task  
-     * Lead Status History Layout     
-     * Medical Questionnaire Layout                       
-     * Opportunity Status History Layout     
+* Aesthetics Center - Account               
+* Aesthetics Center - Lead                     
+* Aesthetics Center - Opportunity         
+* Aesthetics Center - Person Account               
+* Aesthetics Center - Service Appt       
+* Aesthetics Center - Task  
+* Lead Status History Layout     
+* Medical Questionnaire Layout                       
+* Opportunity Status History Layout     
 
 Compact Layouts (5)
 
-     * AestCtr_Account         
-     * AestCtr_Lead  
-     * AestCtr_Oppty            
-     * AestCtr_Person_Account        
-     * AestCtr_Service_Appt 
+* AestCtr_Account         
+* AestCtr_Lead  
+* AestCtr_Oppty            
+* AestCtr_Person_Account        
+* AestCtr_Service_Appt 
 
 Path Assistants (2)
 
-     * AestCtr_Lead_Path
-     * AestCtr_Opportunity_Path
+* AestCtr_Lead_Path
+* AestCtr_Opportunity_Path
 
 List Views (4)
-     * All - Medical Questionnaire    
-     * My New Leads 
-     * My Open Leads           
-     * My Open Opportunities          
+* All - Medical Questionnaire    
+* My New Leads 
+* My Open Leads           
+* My Open Opportunities          
 
-Lightning Page (5)
+Lightning Pages (5)
 
-     * Account_Record_Page_AestCtr
-     * Aesthetics_Center_Home_Page
-     * Aesthetics_Center_Oppty_Page
-     * Lead_Record_Page_AestCtr
+* Account_Record_Page_AestCtr
+* Aesthetics_Center_Home_Page
+* Aesthetics_Center_Oppty_Page
+* Lead_Record_Page_AestCtr
 
 Business Processes (2)
 
-     * AestCtr - Oppty Sales Process
-     * AestCtr - Lead Process
+* AestCtr - Oppty Sales Process
+* AestCtr - Lead Process
 
 Actions (4)
 
-     * Medical_Questionnaire_AesCtr_Lead            
-     * Medical_Questionniare_AestCtr_Oppty        
-     * New_Appointment_AestCtr - Opportunity
-     * Reschedule_Service_Appt_AestCtr - Event
-     * LogACallAestCtr - Global
-     * NewTaskAestCtr - Global
-     * Send_Email_AestCtr - Global
+* Medical_Questionnaire_AesCtr_Lead            
+* Medical_Questionniare_AestCtr_Oppty        
+* New_Appointment_AestCtr - Opportunity
+* Reschedule_Service_Appt_AestCtr - Event
+* LogACallAestCtr - Global
+* NewTaskAestCtr - Global
+* Send_Email_AestCtr - Global
      
 Reports (6)
 
-   * Aesthetics Center Reports Report Folder
-   * Closed Opportunities by Lead Source 
-   * Converted Leads 
-   * Lead by Lead Source               
-   * Lead Conversion by Source                 
-   * Open Opportunities by Stage             
-   * Opportunities Closing Next 60 Days
+* Aesthetics Center Reports Report Folder
+* Closed Opportunities by Lead Source 
+* Converted Leads 
+* Lead by Lead Source               
+* Lead Conversion by Source                 
+* Open Opportunities by Stage             
+* Opportunities Closing Next 60 Days
 
 Dashboard (1)
-   * Aesthetics Center Dashboard Folder
-   * Aesthetics Center Performance Dashboard 
+* Aesthetics Center Dashboard Folder
+* Aesthetics Center Performance Dashboard 
+
 Validation Rule - Opportunity (1)
-     * Prevent_Stage_Paid_In_Full
-*Asset File (1)*
-     * HC_Logo          
-*Global Value Set (1)*
-     * Yes_No 
+
+* Prevent_Stage_Paid_In_Full
+
+Asset File (1)
+
+* HC_Logo
+     
+Global Value Set (1)
+
+* Yes_No 
 
 ## Configuration Requirements
 
