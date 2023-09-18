@@ -38,16 +38,16 @@ Driving **higher top-line revenue**, focuses sales on **better margin** procedur
 
 ## Package Includes:
 
-*Lightning App (1)*
+Lightning App (1)
      * Aesthetics_Sales
      * Aesthetics_Sales_UtilityBar
-*Custom Objects (3)*
+Custom Objects (3)*
      * Medical Questionnaire
      * Lead Status History
      * Opportunity Status History
-*Tab (1)*
+Tab (1)*
      * Medical Questionnaire
-*Flow (8)*
+Flow (8)*
      * Aesthetics_Create_or_Update_Medical_Questionnaire
      * Aesthetics_Create_Service_Appointment
      * Aesthetics_Create_Update_Lead_Status_History_record_when_Lead_is_edited
