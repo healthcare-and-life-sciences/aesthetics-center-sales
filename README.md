@@ -1,139 +1,183 @@
 ![](/images/ahlsbanner.png)
 
-# A-HLS [Accelerator] Documentation
+# Aesthetics Center ReadMe
 
-## Overview
+## **Overview**
 
-Add Brief overview
+The Aesthetics Center Sales Solution Accelerator delivers pre-configured flows, custom objects, record pages, and other configurations designed to streamline Aesthetics Center lead and sales management. All of these configurations are available for download into your Salesforce org free of charge.
 
----
+## **Business Objective**
 
-## Business Objective
+The objective of this accelerator is to provide a preconfigured starting point for Aesthetics Center sales team. 
 
-Add Accelerator Objective
+## **Business Value and Benefits**
 
-## Business Value and Benefits
+Driving **higher top-line revenue**, focuses sales on **better margin** procedures and **streamlines the pre-op process** to assure patients complete their journey.
 
--    Add
--    Add
-
--    Add
--    Add
-
----
+* **Driving Higher Top-Line Revenue**
+    * Eliminating the loss of leads
+    * Tracking all interactions
+* **Better Margin Procedures**
+    * Streamline technologies
+    * Create a technological foundation
+    * Develop workflows for key milestones
+* **Streamline the Medical Clearance Process**
+    * Automate the pre-op clearance process
+    * Provide support for clinical review
+    * Provide an optimized process
 
 ## Industry Focus and Workflow
 
 ### Primary Industry:
 
--    Add
--    Add
+* Healthcare and Life Sciences
 
-### Primary User Persona:
+### Intended End User:
 
--    Add
--    Add
-
-### User Workflow:
-
--    Add
--    Add
-
----
+* Aesthetics Center Sales Team and Sales Managers
 
 ## Package Includes:
 
-### **OmniScript (#)**
-
--    Add
--    Add
--    Add
-
-### **DataRaptor (#)**
-
--    Add
--    Add
--    Add
-
-### **Custom Components (#)**
-
--    Add
--    Add
--    Add
-
----
+*Lightning App (1)*
+     * Aesthetics_Sales
+     * Aesthetics_Sales_UtilityBar
+*Custom Objects (3)*
+     * Medical Questionnaire
+     * Lead Status History
+     * Opportunity Status History
+*Tab (1)*
+     * Medical Questionnaire
+*Flow (8)*
+     * Aesthetics_Create_or_Update_Medical_Questionnaire
+     * Aesthetics_Create_Service_Appointment
+     * Aesthetics_Create_Update_Lead_Status_History_record_when_Lead_is_edited
+     * Aesthetics_Create_Update_Opportunity_Status_History_record_when_Oppty_is_edited
+     * Aesthetics_Gather_Lead_Information_Web2Lead
+     * Aesthetics_Relate_Medical_Questionnaire_and_Files_to_Oppty_Acct
+     * Aesthetics_Reschedule_Service_Appointment
+     * Aesthetics_Update_Opportunity_Stage_if_products_are_added
+*Record Type (4)*
+     * Aesthetics Center - Account               
+     * Aesthetics Center - Lead         
+     * Aesthetics Center - Opportunity         
+     * Aesthetics Center - Person Account  
+     * Aesthetics Center - Task  
+*Page Layout (9)*
+     * Aesthetics Center - Account               
+     * Aesthetics Center - Lead                     
+     * Aesthetics Center - Opportunity         
+     * Aesthetics Center - Person Account               
+     * Aesthetics Center - Service Appt       
+     * Aesthetics Center - Task  
+     * Lead Status History Layout     
+     * Medical Questionnaire Layout                       
+     * Opportunity Status History Layout     
+*Compact Layout (5)*
+     * AestCtr_Account         
+     * AestCtr_Lead  
+     * AestCtr_Oppty            
+     * AestCtr_Person_Account        
+     * AestCtr_Service_Appt 
+*Path Assistant (2)*
+     * AestCtr_Lead_Path
+     * AestCtr_Opportunity_Path
+*List View (4)*
+     * All - Medical Questionnaire    
+     * My New Leads 
+     * My Open Leads           
+     * My Open Opportunities          
+*Lightning Page (5)*
+     * Account_Record_Page_AestCtr
+     * Aesthetics_Center_Home_Page
+     * Aesthetics_Center_Oppty_Page
+     * Lead_Record_Page_AestCtr
+*Business Processes (2)*
+     * AestCtr - Oppty Sales Process
+     * AestCtr - Lead Process
+*Actions (4)*
+     * Medical_Questionnaire_AesCtr_Lead            
+     * Medical_Questionniare_AestCtr_Oppty        
+     * New_Appointment_AestCtr - Opportunity
+     * Reschedule_Service_Appt_AestCtr - Event
+     * LogACallAestCtr - Global
+     * NewTaskAestCtr - Global
+     * Send_Email_AestCtr - Global
+*Reports (6)*
+     * Aesthetics Center Reports Report Folder
+     * Closed Opportunities by Lead Source 
+     * Converted Leads 
+     * Lead by Lead Source               
+     * Lead Conversion by Source                 
+     * Open Opportunities by Stage             
+     * Opportunities Closing Next 60 Days
+*Dashboard (1)*
+     * Aesthetics Center Dashboard Folder
+     * Aesthetics Center Performance Dashboard 
+Validation Rule - Opportunity (1)
+     * Prevent_Stage_Paid_In_Full
+*Asset File (1)*
+     * HC_Logo          
+*Global Value Set (1)*
+     * Yes_No 
 
 ## Configuration Requirements
 
-### Pre-Install Configuration Steps:
+### Installation Steps:
 
-1. Add
-2. Add
-
-#### Install the Data Pack
-
-1. Follow the download steps presented on the Accelerate HLS website for this Accelerator.
-
-     1. Alternatively, you may download the Data Pack folder in the following GitHub repository: **[INSERT REPO LINK]**
-
-2. Then, complete the following steps to import them into your Salesforce org.
-
-     1. To Import, in your destination Salesforce org, Click on **App Launcher** → Search for '**OmniStudio DataPacks**' and click on it.
-     2. Click on '**Installed**' and on the right side click on '**Import from**'.
-     3. Select '**From File**' - When the window opens, select the Data Pack file that you downloaded and stored on your machine. Click '**Install**'.
-     4. When prompted to Activate the OmniScript, choose **Not Now**.
+1. Install the unmanaged package.
 
 ### Post-Install Configuration Steps:
 
-1. **[IF YOUR DATAPACK HAS OMNISCRIPTS - INCLUDE THE FOLLOWING STEPS]**
+1. Confirm that all the newly installed flows are active. 
+2. Place the Aesthetics_Gather_Lead_Information_Web2Lead flow on an Experience Cloud page. 
+    A. Update the picklist values on the Patient_Preferred_Service__c field on Lead and Opportunity objects to reflect that values you want in your Web2Lead form. 
+        1. The Web2Lead form pulls from the Patient_Preferred_Service__c field on Lead.
+    A. (Setup; Object Manager; Opportunity/Lead; Fields & Relationships; Stage/Status).
+3. Complete lead conversion field mapping for the following custom Lead fields to Opportunity (Setup; Object Manager; Lead; Fields & Relationships; Map Lead Fields)
+    A. Best Time to Contact
+    B. Preferred Contact Method
+    C. Patient Preferred Service
+4. Create a queue for leads and tasks. This is used in the Aesthetics - Gather Lead Information (Web2Lead) flow. (Setup; Queues; New)
+    A. Label it Aesthetics Center (Aesthetics_Center). 
+    B. If you use a different naming convention or existing queue you'll need to update the Get_Aesthetics_Center_Queue_ID element. 
+5. Suggested Lead and Opportunity field edits?
+    A. Configure the Lead Status picklist on the Lead object to the below suggested values and add the values to the Aest Ctr - Lead Process. (Setup; Object Manager; Lead; Fields & Relationships; Status).
+        1) New
+        2) Qualified
+        3) Pending Eval
+        4) Nurturing
+        5) Unqualified
+        6) Converted
+        7) Cold
+    B. Configure the Opportunity StageName picklist values on the Opportunity object the below suggested values and add the values to the AestCtr - Oppty Sales Process. (Setup; Object Manager; Opportunity; Fields & Relationships; Stage).
+        1) The ‘Paid - Partial’ and ‘Paid - In Full’ stages are specifically referenced  the **Aesthetics - Update Opportunity Stage if Products are Added** flow**. Prevent_Stage_Paid_In_Full** validation rule references ‘Paid - In Full’ stages. If you use a different naming convention or existing values you’ll need to adjust the flow and validation rule accordingly. 
+            a) Qualification
+            b) Pending - Info
+            c) Paid - Partial
+            d) Paid - In Full
+            e) Closed Won
+            f) Closed Lost
+        2) For the new status values set the Probability and Forecast Category to your preference. 
+6. We suggest adding the below fields to the AestCtr - Opportunity Path for the ‘Qualification’, ‘Pending - Info’, and ‘Paid -  Partial’ stages as well as specific guidance. Since multiple opportunity StageName values are custom we’re not able to include them them in the pachage. (Setup; Path Setting; AestCtr - Opportunity Path). 
+    A. Assigned Team Member
+    B. Total Paid
+    C. Remaining Balance
+7. Add the Reschedule (Reschedule_Service_Appt_AesCtr) action to the Event page layout. (Setup; Object Manager; Event; Page Layouts; Event Layout).
 
-2. Click on **App Launcher** → Search for “OmniScripts”
+### Data Creation & Import Steps: 
 
-     1. Navigate to the recently installed OmniScript in the list view
-     2. Click on the dropdown at the right of the OmniScript and select **Activate**.
-     3. For more information regarding activating Omniscripts, please see this article: https://help.salesforce.com/s/articleView?id=sf.os_activating_omniscripts.htm&type=5
-
-3. Add the installed OmniScript to the lightning page layout of your choosing.
-
-     1. Refer to this article for more information regarding adding OmniScripts to a Lightning Page: https://help.salesforce.com/s/articleView?id=sf.os_add_a_standard_omniscript_component_to_a_lighting_page_20263.htm&type=5
-     2. Refer to this article for more information regarding adding OmniScripts to an Experience Cloud Page: https://help.salesforce.com/s/articleView?id=sf.os_add_a_standard_omniscript_component_to_an_experience_page_20341.htm&type=5
-
-4. **[IF YOUR DATAPACK HAS FLEXCARDS - INCLUDE THE FOLLOWING STEPS]**
-
-5. Click on **App Launcher** → Search for “FlexCards”
-
-     1. Navigate to the recently installed FlexCard in the list view
-     2. Open the FlexCard
-     3. Click **Activate** and select the appropriate Publish Options
-     4. For more information regarding activating FlexCards, please see this article: https://help.salesforce.com/s/articleView?id=sf.os_activateconfigureand_publish_flexcards_24744.htm&type=5
-
-6. Add the installed FlexCard to the lightning page layout of your choosing.
-
-7. Refer to the following articles for more information regarding adding FlexCards to a Lightning or Experience page:
-
-     1. https://help.salesforce.com/s/articleView?id=sf.os_add_a_flexcard_to_a_lightning_page.htm&type=5
-     2. https://help.salesforce.com/s/articleView?id=sf.os_add_a_flexcard_to_an_experience_page.htm&type=5
-
-8. Add
-
-9. Add
-
----
+* N/A
 
 ## Assumptions
 
-1. A customer has licenses for Health Cloud, and the HINS Managed Package with OmniStudio. These solutions have all been installed and are functional.
-2. A customer is assuming Salesforce Lightning Experience — not Classic.
-3. Data Model elements that are part of the HINS (Vlocity) Managed package and Health Cloud are all available.
-4. The Accelerator uses the Lightning Design System standards and look. Customers may want to apply their own branding which can be achieved.
-
----
+* The target org is using Person Accounts
+* The target org has Health Cloud or Sales Cloud licenses. 
+    * If Salesforce Scheduler is being used for scheduling the target org will also need those licenses.  
+* Salesforce Scheduler setup is complete in the target org, if it’s being used.
+    * The Aesthetics_Reschedule_Service_Appointment flow assumes that Event Management is enabled in the Salesforce Scheduler Settings.  
+* Experience Cloud setup is complete in the target org, if its being used for the Web2Lead flow.
+*  Product and Product Book setup is complete in the target org.
+* A customer is assuming Salesforce Lightning Experience — not Classic.
+* The Accelerator uses the Lightning Design System standards and look. Customers may want to apply their own branding which can be achieved.
 
 ## Revision History
-
--    **Revision Short Description (Month Day, Year)**
-
--    -    Add
-     -    Add
-
--
