@@ -43,17 +43,17 @@ Lightning App (1)
 * Aesthetics_Sales
 * Aesthetics_Sales_UtilityBar
 
-Custom Objects (3)*
+Custom Objects (3)
 
 * Medical Questionnaire
 * Lead Status History
 * Opportunity Status History
 
-Tab (1)*
+Tab (1)
 
 * Medical Questionnaire
 
-Flows (8)*
+Flows (8)
 
      * Aesthetics_Create_or_Update_Medical_Questionnaire
      * Aesthetics_Create_Service_Appointment
@@ -64,13 +64,16 @@ Flows (8)*
      * Aesthetics_Reschedule_Service_Appointment
      * Aesthetics_Update_Opportunity_Stage_if_products_are_added
 
-*Record Type (4)*
+Record Types (4)
+
      * Aesthetics Center - Account               
      * Aesthetics Center - Lead         
      * Aesthetics Center - Opportunity         
      * Aesthetics Center - Person Account  
      * Aesthetics Center - Task  
-*Page Layout (9)*
+
+Page Layouts (9)
+
      * Aesthetics Center - Account               
      * Aesthetics Center - Lead                     
      * Aesthetics Center - Opportunity         
@@ -80,29 +83,40 @@ Flows (8)*
      * Lead Status History Layout     
      * Medical Questionnaire Layout                       
      * Opportunity Status History Layout     
-*Compact Layout (5)*
+
+Compact Layouts (5)
+
      * AestCtr_Account         
      * AestCtr_Lead  
      * AestCtr_Oppty            
      * AestCtr_Person_Account        
      * AestCtr_Service_Appt 
-*Path Assistant (2)*
+
+Path Assistants (2)
+
      * AestCtr_Lead_Path
      * AestCtr_Opportunity_Path
-*List View (4)*
+
+List Views (4)
      * All - Medical Questionnaire    
      * My New Leads 
      * My Open Leads           
      * My Open Opportunities          
-*Lightning Page (5)*
+
+Lightning Page (5)
+
      * Account_Record_Page_AestCtr
      * Aesthetics_Center_Home_Page
      * Aesthetics_Center_Oppty_Page
      * Lead_Record_Page_AestCtr
-*Business Processes (2)*
+
+Business Processes (2)
+
      * AestCtr - Oppty Sales Process
      * AestCtr - Lead Process
-*Actions (4)*
+
+Actions (4)
+
      * Medical_Questionnaire_AesCtr_Lead            
      * Medical_Questionniare_AestCtr_Oppty        
      * New_Appointment_AestCtr - Opportunity
@@ -110,17 +124,20 @@ Flows (8)*
      * LogACallAestCtr - Global
      * NewTaskAestCtr - Global
      * Send_Email_AestCtr - Global
-*Reports (6)*
-     * Aesthetics Center Reports Report Folder
-     * Closed Opportunities by Lead Source 
-     * Converted Leads 
-     * Lead by Lead Source               
-     * Lead Conversion by Source                 
-     * Open Opportunities by Stage             
-     * Opportunities Closing Next 60 Days
-*Dashboard (1)*
-     * Aesthetics Center Dashboard Folder
-     * Aesthetics Center Performance Dashboard 
+     
+Reports (6)
+
+   * Aesthetics Center Reports Report Folder
+   * Closed Opportunities by Lead Source 
+   * Converted Leads 
+   * Lead by Lead Source               
+   * Lead Conversion by Source                 
+   * Open Opportunities by Stage             
+   * Opportunities Closing Next 60 Days
+
+Dashboard (1)
+   * Aesthetics Center Dashboard Folder
+   * Aesthetics Center Performance Dashboard 
 Validation Rule - Opportunity (1)
      * Prevent_Stage_Paid_In_Full
 *Asset File (1)*
