@@ -161,13 +161,13 @@ Global Value Set (1)
 
 1. Confirm that all the newly installed flows are active. 
 2. Place the Aesthetics_Gather_Lead_Information_Web2Lead flow on an Experience Cloud page. 
-    A. Update the picklist values on the Patient_Preferred_Service__c field on Lead and Opportunity objects to reflect that values you want in your Web2Lead form. 
+    1. Update the picklist values on the Patient_Preferred_Service__c field on Lead and Opportunity objects to reflect that values you want in your Web2Lead form. 
         1. The Web2Lead form pulls from the Patient_Preferred_Service__c field on Lead.
-    A. (Setup; Object Manager; Opportunity/Lead; Fields & Relationships; Stage/Status).
+    2. (Setup; Object Manager; Opportunity/Lead; Fields & Relationships; Stage/Status).
 3. Complete lead conversion field mapping for the following custom Lead fields to Opportunity (Setup; Object Manager; Lead; Fields & Relationships; Map Lead Fields)
-    A. Best Time to Contact
-    B. Preferred Contact Method
-    C. Patient Preferred Service
+    1. Best Time to Contact
+    2. Preferred Contact Method
+    3. Patient Preferred Service
 4. Create a queue for leads and tasks. This is used in the Aesthetics - Gather Lead Information (Web2Lead) flow. (Setup; Queues; New)
     A. Label it Aesthetics Center (Aesthetics_Center). 
     B. If you use a different naming convention or existing queue you'll need to update the Get_Aesthetics_Center_Queue_ID element. 
