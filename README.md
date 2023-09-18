@@ -39,22 +39,18 @@ Driving **higher top-line revenue**, focuses sales on **better margin** procedur
 ## Package Includes:
 
 Lightning App (1)
-
 * Aesthetics_Sales
 * Aesthetics_Sales_UtilityBar
 
 Custom Objects (3)
-
 * Medical Questionnaire
 * Lead Status History
 * Opportunity Status History
 
 Tab (1)
-
 * Medical Questionnaire
 
 Flows (8)
-
 * Aesthetics_Create_or_Update_Medical_Questionnaire
 * Aesthetics_Create_Service_Appointment
 * Aesthetics_Create_Update_Lead_Status_History_record_when_Lead_is_edited
@@ -65,7 +61,6 @@ Flows (8)
 * Aesthetics_Update_Opportunity_Stage_if_products_are_added
 
 Record Types (4)
-
 * Aesthetics Center - Account               
 * Aesthetics Center - Lead         
 * Aesthetics Center - Opportunity         
@@ -73,7 +68,6 @@ Record Types (4)
 * Aesthetics Center - Task  
 
 Page Layouts (9)
-
 * Aesthetics Center - Account               
 * Aesthetics Center - Lead                     
 * Aesthetics Center - Opportunity         
@@ -85,7 +79,6 @@ Page Layouts (9)
 * Opportunity Status History Layout     
 
 Compact Layouts (5)
-
 * AestCtr_Account         
 * AestCtr_Lead  
 * AestCtr_Oppty            
@@ -93,7 +86,6 @@ Compact Layouts (5)
 * AestCtr_Service_Appt 
 
 Path Assistants (2)
-
 * AestCtr_Lead_Path
 * AestCtr_Opportunity_Path
 
@@ -104,19 +96,16 @@ List Views (4)
 * My Open Opportunities          
 
 Lightning Pages (5)
-
 * Account_Record_Page_AestCtr
 * Aesthetics_Center_Home_Page
 * Aesthetics_Center_Oppty_Page
 * Lead_Record_Page_AestCtr
 
 Business Processes (2)
-
 * AestCtr - Oppty Sales Process
 * AestCtr - Lead Process
 
 Actions (4)
-
 * Medical_Questionnaire_AesCtr_Lead            
 * Medical_Questionniare_AestCtr_Oppty        
 * New_Appointment_AestCtr - Opportunity
@@ -126,7 +115,6 @@ Actions (4)
 * Send_Email_AestCtr - Global
      
 Reports (6)
-
 * Aesthetics Center Reports Report Folder
 * Closed Opportunities by Lead Source 
 * Converted Leads 
@@ -140,15 +128,12 @@ Dashboard (1)
 * Aesthetics Center Performance Dashboard 
 
 Validation Rule - Opportunity (1)
-
 * Prevent_Stage_Paid_In_Full
 
 Asset File (1)
-
 * HC_Logo
      
 Global Value Set (1)
-
 * Yes_No 
 
 ## Configuration Requirements
