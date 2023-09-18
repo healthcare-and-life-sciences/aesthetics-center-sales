@@ -157,21 +157,21 @@ Global Value Set (1)
     2. If you use a different naming convention or existing queue you'll need to update the Get_Aesthetics_Center_Queue_ID element. 
 5. Suggested Lead and Opportunity field edits?
     1. Configure the Lead Status picklist on the Lead object to the below suggested values and add the values to the Aest Ctr - Lead Process. (Setup; Object Manager; Lead; Fields & Relationships; Status).
-        * New
-        * Qualified
-        * Pending Eval
-        * Nurturing
-        * Unqualified
-        * Converted
-        * Cold
+        1. New
+        2. Qualified
+        3. Pending Eval
+        4. Nurturing
+        5. Unqualified
+        6. Converted
+        7. Cold
     2. Configure the Opportunity StageName picklist values on the Opportunity object the below suggested values and add the values to the AestCtr - Oppty Sales Process. (Setup; Object Manager; Opportunity; Fields & Relationships; Stage).
         1. The ‘Paid - Partial’ and ‘Paid - In Full’ stages are specifically referenced  the **Aesthetics - Update Opportunity Stage if Products are Added** flow**. Prevent_Stage_Paid_In_Full** validation rule references ‘Paid - In Full’ stages. If you use a different naming convention or existing values you’ll need to adjust the flow and validation rule accordingly. 
-            1. Qualification
-            2. Pending - Info
-            3. Paid - Partial
-            4. Paid - In Full
-            5. Closed Won
-            6. Closed Lost
+            * Qualification
+            * Pending - Info
+            * Paid - Partial
+            * Paid - In Full
+            * Closed Won
+            * Closed Lost
         2. For the new status values set the Probability and Forecast Category to your preference. 
 6. We suggest adding the below fields to the AestCtr - Opportunity Path for the ‘Qualification’, ‘Pending - Info’, and ‘Paid -  Partial’ stages as well as specific guidance. Since multiple opportunity StageName values are custom we’re not able to include them them in the pachage. (Setup; Path Setting; AestCtr - Opportunity Path). 
     1. Assigned Team Member
