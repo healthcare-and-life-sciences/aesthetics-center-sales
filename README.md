@@ -139,14 +139,20 @@ Actions (4)
 * NewTaskAestCtr - Global
 * Send_Email_AestCtr - Global
      
-Reports (6)
+Reports (12)
 * Aesthetics Center Reports Report Folder
-* Closed Opportunities by Lead Source 
-* Converted Leads 
-* Lead by Lead Source               
-* Lead Conversion by Source                 
-* Open Opportunities by Stage             
+* Appointments - This Month
+* Appointments - This Week
+* Closed Opportunities by Lead Source
+* Converted Leads
+* Lead by Lead Source
+* Lead Conversion by Source
+* Open Opportunities by Stage
 * Opportunities Closing Next 60 Days
+* Today's Appointments Not Confirmed
+* Today's Confirmed Appointments
+* Tomorrow's Appointments Not Confirm
+* Tomorrow's Confirmed Appointments
 
 Dashboard (1)
 * Aesthetics Center Dashboard Folder
