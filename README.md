@@ -89,7 +89,8 @@ Record Types (4)
 * Aesthetics Center - Lead         
 * Aesthetics Center - Opportunity         
 * Aesthetics Center - Person Account  
-* Aesthetics Center - Task  
+* Aesthetics Center - Task
+* Aesthetics Center - Service Appt  
 
 Page Layouts (9)
 * Aesthetics Center - Account               
