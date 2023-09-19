@@ -188,7 +188,7 @@ Global Value Set (1)
 
 4. Create a queue for leads and tasks. This is used in the Aesthetics - Gather Lead Information (Web2Lead) flow. (Setup; Queues; New)
     1. Label it Aesthetics Center (Aesthetics_Center). 
-    2. If you use a different naming convention or existing queue you'll need to update the Get_Aesthetics_Center_Queue_ID element. 
+    2. This specific queue name is referenced in the Aesthetics_Gather_Lead_Info_Create_Follow_up_Task_Web2Lead flow (Get_Aesthetics_Center_Queue_ID element). If you use a different naming convention or existing queue, you’ll need to adjust the flow rule accordingly.
 
 5. Suggested Lead field edit.
    1. Configure the Lead Status picklist on the Lead object to the below suggested values and add the values to the Aest Ctr - Lead Process. (Setup; Object Manager; Lead; Fields & Relationships; Status) & (Setup; Lead Processes; AestCtr - Lead Process).
