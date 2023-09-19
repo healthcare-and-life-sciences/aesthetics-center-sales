@@ -209,7 +209,7 @@ Global Value Set (1)
       4. Paid - In Full
       5. Closed Won
       6. Closed Lost
-   3. The ‘Paid - Partial’ and ‘Paid - In Full’ stages are specifically referenced in the **Aesthetics - Update Opportunity Stage if Products are Added** flow**. Prevent_Stage_Paid_In_Full** validation rule references ‘Paid - In Full’ stages. If you use a different naming convention or existing values, you’ll need to adjust the flow and validation rule accordingly. 
+   3. The ‘Paid - Partial’ and ‘Paid - In Full’ stages are specifically referenced in the Aesthetics - Update Opportunity Stage if Products are Added flow. Prevent_Stage_Paid_In_Full validation rule references ‘Paid - In Full’ stage. If you use a different naming convention or existing values, you’ll need to adjust the flow and validation rule accordingly. 
 
 7. Suggested Service Appointment field edit.
    1. Configure Status picklist on the Service Appointment object to the below suggested values. (Setup; Object Manager; Service Appointment; Fields & Relationships; Status).
