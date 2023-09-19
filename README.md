@@ -47,10 +47,34 @@ Custom Objects (3)
 * Lead Status History
 * Opportunity Status History
 
+Custom Fields on Standard Objects (18)  
+* Lead
+   * Best Time to Contact
+   * Current Status
+   * Days in Current Status
+   * Patient Preferred Service
+   * Preferred Contact Method
+   * Priority
+   * Returning Patient
+* Opportunity
+   * Assigned Team Member
+   * Best Time to Contact
+   * Current Stage
+   * Days in Current Stage
+   * Patient Preferred Service
+   * Preferred Contact Method
+   * Remaining Balance
+   * Total Paid
+* Service Appointment
+   * Appointment Confirmation Date
+   * Appointment Confirmed By
+   * Opportunity
+
 Tab (1)
 * Medical Questionnaire
 
 Flows (8)
+* Aesthetics_Confirm_Appointment
 * Aesthetics_Create_or_Update_Medical_Questionnaire
 * Aesthetics_Create_Service_Appointment
 * Aesthetics_Create_Update_Lead_Status_History_record_when_Lead_is_edited
@@ -110,6 +134,7 @@ Actions (4)
 * Medical_Questionniare_AestCtr_Oppty        
 * New_Appointment_AestCtr - Opportunity
 * Reschedule_Service_Appt_AestCtr - Event
+* Confirm_Appt_AestCtr - Service Appointment
 * LogACallAestCtr - Global
 * NewTaskAestCtr - Global
 * Send_Email_AestCtr - Global
