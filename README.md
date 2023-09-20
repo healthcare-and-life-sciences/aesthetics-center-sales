@@ -228,6 +228,8 @@ Global Value Set (1)
 
 9. Add the Reschedule (Reschedule_Service_Appt_AesCtr) action to the Event page layout. (Setup; Object Manager; Event; Page Layouts; Event Layout).
 
+10. Share the Aesthetics Center Performance Dashboard folder and the Aesthetics Center Reports folder with all users. 
+
 ### Data Creation & Import Steps: 
 
 * N/A
