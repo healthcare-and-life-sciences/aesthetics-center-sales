@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ServiceAppointment$Name</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$Account</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$Appointment_Confirmation_Date__c</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$Appointment_Confirmed_By__c</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ServiceAppointment$Status</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Appointments - This Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Service_Appointments__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ServiceAppointment$ActualEndTime</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

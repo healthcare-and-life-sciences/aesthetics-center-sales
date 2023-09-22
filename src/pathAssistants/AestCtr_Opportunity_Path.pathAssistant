@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>AestCtr - Opportunity Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Best_Time_to_Contact__c</fieldNames>
+        <fieldNames>Total_Paid__c</fieldNames>
+        <fieldNames>Remaining_Balance__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;The patient is paid in full and ready for the service(s) but they have not been completed, yet. &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Paid - In Full</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Best_Time_to_Contact__c</fieldNames>
+        <fieldNames>Total_Paid__c</fieldNames>
+        <fieldNames>Remaining_Balance__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Patient has made payment(s) but there is still a balance.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Paid - Partial</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Best_Time_to_Contact__c</fieldNames>
+        <fieldNames>Total_Paid__c</fieldNames>
+        <fieldNames>Remaining_Balance__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Waiting for feedback from staff, or the patient, before moving forward.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Pending - Info</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Best_Time_to_Contact__c</fieldNames>
+        <fieldNames>Total_Paid__c</fieldNames>
+        <fieldNames>Remaining_Balance__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Lead has been converted and Products (Services) are being added.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Qualification</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Aesthetics_Center_Opportunity</recordTypeName>
+</PathAssistant>

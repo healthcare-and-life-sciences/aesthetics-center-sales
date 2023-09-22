@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessProcesses>
+        <fullName>AestCtr - Oppty Sales Process</fullName>
+        <description>Used by Aesthetics Center users</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - In Full</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid - Partial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending - Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualification</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayouts>
+        <fullName>AestCtr_Oppty</fullName>
+        <fields>Name</fields>
+        <fields>AccountId</fields>
+        <fields>Amount</fields>
+        <fields>Days_in_Current_Stage__c</fields>
+        <fields>CloseDate</fields>
+        <fields>Best_Time_to_Contact__c</fields>
+        <fields>Preferred_Contact_Method__c</fields>
+        <fields>OwnerId</fields>
+        <label>AestCtr Oppty</label>
+    </compactLayouts>
+    <fields>
+        <fullName>Assigned_Team_Member__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Assigned Team Member</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>ServiceResource.ResourceType</field>
+                <operation>equals</operation>
+                <value>Technician</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>ServiceResource</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Best_Time_to_Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Best Time to Contact</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Morning</fullName>
+                    <default>false</default>
+                    <label>Morning</label>
+                </value>
+                <value>
+                    <fullName>Afternoon</fullName>
+                    <default>false</default>
+                    <label>Afternoon</label>
+                </value>
+                <value>
+                    <fullName>Evening</fullName>
+                    <default>false</default>
+                    <label>Evening</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current_Stage__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Current Stage</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Opportunity_Status_History__c.Current__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Opportunity_Status_History__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Days_in_Current_Stage__c</fullName>
+        <externalId>false</externalId>
+        <formula>Current_Stage__r.Days_in_Status__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Current Stage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Patient_Preferred_Service__c</fullName>
+        <externalId>false</externalId>
+        <label>Patient Preferred Service</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cool Sculpting - Abdomen</fullName>
+                    <default>false</default>
+                    <label>Cool Sculpting - Abdomen</label>
+                </value>
+                <value>
+                    <fullName>Botox</fullName>
+                    <default>false</default>
+                    <label>Botox</label>
+                </value>
+                <value>
+                    <fullName>Chemical Peels</fullName>
+                    <default>false</default>
+                    <label>Chemical Peels</label>
+                </value>
+                <value>
+                    <fullName>Facial</fullName>
+                    <default>false</default>
+                    <label>Facial</label>
+                </value>
+                <value>
+                    <fullName>Laser Hair Removal</fullName>
+                    <default>false</default>
+                    <label>Laser Hair Removal</label>
+                </value>
+                <value>
+                    <fullName>Microneedling</fullName>
+                    <default>false</default>
+                    <label>Microneedling</label>
+                </value>
+                <value>
+                    <fullName>Restylane Kysse</fullName>
+                    <default>false</default>
+                    <label>Restylane Kysse</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Preferred_Contact_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Preferred Contact Method</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Phone Call</fullName>
+                    <default>false</default>
+                    <label>Phone Call</label>
+                </value>
+                <value>
+                    <fullName>Text</fullName>
+                    <default>false</default>
+                    <label>Text</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Remaining_Balance__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount - Total_Paid__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Remaining Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Paid__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Paid</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <listViews>
+        <fullName>My_Open_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notEqual</operation>
+            <value>Closed Won,Closed Lost</value>
+        </filters>
+        <label>My Open Opportunities</label>
+    </listViews>
+    <recordTypes>
+        <fullName>Aesthetics_Center_Opportunity</fullName>
+        <active>true</active>
+        <businessProcess>AestCtr - Oppty Sales Process</businessProcess>
+        <compactLayoutAssignment>AestCtr_Oppty</compactLayoutAssignment>
+        <description>Used by Aesthetics Center users</description>
+        <label>Aesthetics Center - Opportunity</label>
+        <picklistValues>
+            <picklist>Best_Time_to_Contact__c</picklist>
+            <values>
+                <fullName>Afternoon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Evening</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Morning</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HealthCloudGA__InsuranceType__c</picklist>
+            <values>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicaid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-pay</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HealthCloudGA__Priority__c</picklist>
+            <values>
+                <fullName>Emergent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Routine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HealthCloudGA__ReasonForOutOfNetworkReferral__c</picklist>
+            <values>
+                <fullName>Insurance Not Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Limited Provider Availability</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Patient Preference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Provider Preference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Not Offered</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HealthCloudGA__Specialty__c</picklist>
+            <values>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neurosurgery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orthopedics</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HealthCloudGA__TypeOfService__c</picklist>
+            <values>
+                <fullName>2nd Opinion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lab Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28please specify in comments%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Radiology Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surgery</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Patient_Preferred_Service__c</picklist>
+            <values>
+                <fullName>Botox</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical Peels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cool Sculpting - Abdomen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laser Hair Removal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Microneedling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Restylane Kysse</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Preferred_Contact_Method__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>Prevent_Stage_Paid_In_Full</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISCHANGED(StageName),
+(ISPICKVAL(StageName, &quot;Paid - In Full&quot;)),
+Remaining_Balance__c &gt; 0)</errorConditionFormula>
+        <errorMessage>The remaining balance needs to be $0 for this stage.</errorMessage>
+    </validationRules>
+</CustomObject>
